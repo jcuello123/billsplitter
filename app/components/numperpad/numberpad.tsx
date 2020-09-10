@@ -1,6 +1,8 @@
 import * as React from "react";
 import { Number } from "./number";
 import { View, StyleSheet } from "react-native";
+import { EraseButton } from "./erasebutton";
+import { Decimal } from "./decimal";
 
 export function Numberpad(props: any) {
   return (
@@ -21,7 +23,12 @@ export function Numberpad(props: any) {
         <Number total={props.total} setTotal={props.setTotal} number="9" />
       </View>
       <View style={styles.row}>
+        <Decimal total={props.total} setTotal={props.setTotal} />
         <Number total={props.total} setTotal={props.setTotal} number="0" />
+        <EraseButton
+          total={props.total}
+          setTotal={props.setTotal}
+        ></EraseButton>
       </View>
     </View>
   );
@@ -35,7 +42,8 @@ const styles = StyleSheet.create({
     width: "100%",
   },
   row: {
+    width: "100%",
     flexDirection: "row",
-    alignSelf: "center",
+    justifyContent: "center",
   },
 });

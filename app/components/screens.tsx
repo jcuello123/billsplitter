@@ -1,11 +1,11 @@
 import * as React from "react";
-import { View, Text, Button, StyleSheet } from "react-native";
+import { View, Text, StyleSheet } from "react-native";
 import { Numberpad } from "./numperpad/numberpad";
 import { useState } from "react";
 
 // @ts-ignore
 export function Home({ navigation }) {
-  const [total, setTotal] = useState(0);
+  const [total, setTotal] = useState("0");
 
   return (
     <View style={styles.bg}>
