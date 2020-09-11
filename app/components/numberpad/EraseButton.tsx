@@ -10,7 +10,7 @@ export function EraseButton(props: any) {
         erase(props);
       }}
     >
-      <View style={styles.bg}>
+      <View style={[styles.bg, { backgroundColor: "#ef9228" }]}>
         <Text style={styles.text}>{symbol}</Text>
       </View>
     </TouchableOpacity>

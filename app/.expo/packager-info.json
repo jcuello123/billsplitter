@@ -2,9 +2,9 @@
   "devToolsPort": 19002,
   "expoServerPort": 19000,
   "packagerPort": 19001,
-  "packagerPid": 14352,
+  "packagerPid": 10680,
   "webpackServerPort": null,
-  "expoServerNgrokUrl": "https://it-2mn.jcuello123.app.exp.direct",
-  "packagerNgrokUrl": "https://packager.it-2mn.jcuello123.app.exp.direct",
-  "ngrokPid": 13676
+  "expoServerNgrokUrl": null,
+  "packagerNgrokUrl": null,
+  "ngrokPid": null
 }

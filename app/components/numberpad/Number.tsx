@@ -25,7 +25,7 @@ function appendNumber(props: any) {
   }
   if (total.includes(".")) {
     const afterDecimal: string = total.split(".")[1];
-    if (afterDecimal.length >= 2 || total.length === 6) {
+    if (afterDecimal.length >= 2) {
       return;
     }
   } else if (total.length === 5) {

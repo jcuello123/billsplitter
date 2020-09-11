@@ -1,8 +1,8 @@
 import * as React from "react";
-import { Number } from "./number";
+import { Number } from "./Number";
 import { View, StyleSheet } from "react-native";
-import { EraseButton } from "./erasebutton";
-import { Decimal } from "./decimal";
+import { EraseButton } from "./EraseButton";
+import { Decimal } from "./Decimal";
 
 export function Numberpad(props: any) {
   return (
@@ -37,7 +37,7 @@ export function Numberpad(props: any) {
 const styles = StyleSheet.create({
   container: {
     flexDirection: "column",
-    backgroundColor: "lightblue",
+    backgroundColor: "black",
     borderRadius: 20,
     width: "100%",
   },

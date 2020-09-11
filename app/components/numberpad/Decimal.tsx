@@ -5,7 +5,7 @@ import { styles } from "./styles";
 export function Decimal(props: any) {
   return (
     <TouchableOpacity onPress={() => handleDecimal(props)}>
-      <View style={styles.bg}>
+      <View style={[styles.bg, { backgroundColor: "#ef9228" }]}>
         <Text style={styles.text}>.</Text>
       </View>
     </TouchableOpacity>
