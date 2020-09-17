@@ -1,7 +1,6 @@
-import * as React from "react";
+import React, { useState } from "react";
 import { View, Text, TouchableOpacity } from "react-native";
 import { Numberpad } from "../numberpad/Numberpad";
-import { useState } from "react";
 import { styles } from "./styles";
 
 // @ts-ignore
@@ -19,7 +18,9 @@ export function HomeScreen({ navigation }) {
       <TouchableOpacity
         onPress={() => {
           if (total !== "0") {
-            navigation.navigate("TipsScreen", { total: total });
+            navigation.navigate("TipsScreen", {
+              total: total,
+            });
           }
         }}
       >
@@ -39,5 +40,3 @@ export function HomeScreen({ navigation }) {
     </View>
   );
 }
-
-
